@@ -1,0 +1,18 @@
+<html>
+<body>
+<h1>Enter your choise</h1><br>
+<h3>you want to go</h3> <br>
+<form action="tictactoe.html" method="GET"><br>
+<input type="submit" value="first" id="pos" onclick="set();"><br>
+<br><input type="submit" value="second" id="pos1" onclick="set1();">
+</form>
+<script>
+function set(){
+	localStorage.setItem("pos",document.getElementById("pos").value);
+}
+function set1(){
+	localStorage.setItem("pos",document.getElementById("pos1").value);
+}
+</script>
+</body>
+</html>
